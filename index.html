@@ -242,7 +242,6 @@
         <!--Grid row-->
         <div class="row" id="rural_landscape_cards">
 
-
           <!--Grid column (2/3rds Population in Rural India)-->
           <div class="col-6 col-sm-4 p-2">
             <!-- Card -->
@@ -251,7 +250,7 @@
               <!-- Card image -->
               <div class="view overlay">
                 <img alt="Card image cap" class="card-img-100 mx-auto"
-                     src="img/card-images/growth.png">
+                     src="img/card-images/two-thirds.png">
               </div>
 
               <!-- Card content -->
@@ -267,7 +266,7 @@
           </div>
           <!--Grid column-->
 
-          <!--Grid column (17.9 Crore Households)-->
+          <!--Grid column (46% of India's Income)-->
           <div class="col-6 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
@@ -289,7 +288,7 @@
           </div>
           <!--Grid column-->
 
-          <!--Grid column (46% of India's Income)-->
+          <!--Grid column (42 Crore Mobile Users)-->
           <div class="col-6 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
@@ -311,7 +310,7 @@
           </div>
           <!--Grid column-->
 
-          <!--Grid column (83 Crore Consumers)-->
+          <!--Grid column (17.9 Crore Households)-->
           <div class="col-6 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
@@ -334,14 +333,14 @@
           <!--Grid column-->
 
           <!--Grid column (70% of India's workforce hails from/resides there)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-6 col-sm-4 p-2" id="centreCardRuralLandscape">
             <!-- Card -->
             <div class="card">
 
               <!-- Card image -->
               <div class="view overlay">
                 <img alt="Card image cap" class="card-img-100 mx-auto"
-                     src="img/card-images/growth.png">
+                     src="img/card-images/83_crore.png">
               </div>
 
               <!-- Card content -->
@@ -357,14 +356,14 @@
           </div>
           <!--Grid column-->
 
-          <!--Grid column (42 Crore Mobile Users)-->
+          <!--Grid column (83 Crore Consumers)-->
           <div class="col-6 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
               <!-- Card image -->
               <div class="view overlay">
-                <img class="card-img-100 mx-auto" src="img/card-images/83_crore.png"
+                <img class="card-img-100 mx-auto" src="img/card-images/consumers.png"
                      alt="Card image cap">
               </div>
 
@@ -409,7 +408,7 @@
               <!-- Card image -->
               <div class="view overlay">
                 <img alt="Card image cap" class="card-img-100 mx-auto"
-                     src="img/card-images/growth.png">
+                     src="img/card-images/2-wheelers.png">
               </div>
 
               <!-- Card content -->
@@ -469,15 +468,61 @@
             <img class="img-fluid" id="workflowImage" src="img/workflow.png" alt="">
           </div>
           <div class="col my-auto mx-auto">
-              <h3 class="mb-3 font-weight-normal">Simple 2-Step Process</h3>
-              <p class="mx-auto my-auto">Retailer places an order through the network portal & pays through wallet</p>
-              <img class="img-fluid card-img-64 mx-auto my-auto" src="img/process_flow.png" alt="">
-              <p class="mx-auto my-auto">SpeedMart/Partner Brand processes dispatch and delivery</p>
+            <!-- Vertical Steppers -->
+            <div class="row mt-1">
+              <div class="col-md-12">
+
+                <!-- Stepers Wrapper -->
+                <ul class="stepper stepper-vertical">
+
+                  <!-- First Step -->
+                  <li class="warning">
+                    <a>
+                      <span class="circle">1</span>
+                    </a>
+                    <div class="step-content grey lighten-3">
+                      <p>
+                        Retailer places an order through the network portal & pays through wallet
+                      </p>
+                    </div>
+                  </li>
+
+                  <!-- Second Step -->
+                  <li class="warning">
+                    <a>
+                      <span class="circle">2</span>
+                    </a>
+                    <div class="step-content grey lighten-3">
+                      <p>
+                        SpeedMart/Partner Brand processes dispatch and delivery
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="completed">
+
+                  </li>
+
+                </ul>
+                <!-- /.Stepers Wrapper -->
+
+              </div>
+            </div>
+            <!-- /.Vertical Steppers -->
           </div>
         </div>
 
       </section>
       <!--Section: Workflow-->
+
+      <!-- Break -->
+      <hr class="my-5">
+
+      <!--Section: Branded Products and Commodities-->
+      <section class="wow fadeIn slower">
+        <h2 class="my-5 h3 text-center">Branded Products and Commodities</h2>
+      </section>
+      <!--Section: Branded Products and Commodities-->
 
     </div>
   </main>
@@ -511,7 +556,7 @@
     const navBarHeight = $('.navbar').innerHeight();
 
     $("#navbar_india_rural_landscape").on('click', function () {
-      const element = document.getElementById('rural_landscape_cards_2');
+      const element = document.getElementById('centreCardRuralLandscape');
       const elementRect = element.getBoundingClientRect();
       const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight;
       const middle = absoluteElementTop - (window.innerHeight / 2);
@@ -537,5 +582,15 @@
 
   </script>
 </body>
+<!--
+Credits-
+<a href="https://iconscout.com/icons/growth" target="_blank">Growth Icon</a>
+on <a href="https://iconscout.com">Iconscout</a>
 
+<a href="https://iconscout.com/icons/shopping" target="_blank">Shopping Icon</a>
+by <a href="https://iconscout.com/contributors/iconscout">Iconscout Freebies</a>
+on <a href="https://iconscout.com">Iconscout</a>
+
+
+-->
 </html>
