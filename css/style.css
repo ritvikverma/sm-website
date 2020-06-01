@@ -38,7 +38,13 @@ body,
   width: 100px;
 }
 
+.speedmart-color-circle {
+  background-color: #dc2a1c !important;
+}
 
+.steps-text {
+  color: black !important;
+}
 
 
 
