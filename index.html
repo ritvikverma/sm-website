@@ -60,12 +60,6 @@
 
           <!-- Right -->
           <ul class="navbar-nav ml-auto mr-5">
-            <li class="nav-item">
-              <a class="nav-link border border-light rounded"
-                target="_blank">
-                <i class="fa fa-phone mr-2"></i>Contact Us
-              </a>
-            </li>
           </ul>
 
         </div>
@@ -243,7 +237,7 @@
         <div class="row" id="rural_landscape_cards">
 
           <!--Grid column (2/3rds Population in Rural India)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -267,7 +261,7 @@
           <!--Grid column-->
 
           <!--Grid column (46% of India's Income)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -289,7 +283,7 @@
           <!--Grid column-->
 
           <!--Grid column (42 Crore Mobile Users)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -311,7 +305,7 @@
           <!--Grid column-->
 
           <!--Grid column (17.9 Crore Households)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -333,7 +327,7 @@
           <!--Grid column-->
 
           <!--Grid column (70% of India's workforce hails from/resides there)-->
-          <div class="col-6 col-sm-4 p-2" id="centreCardRuralLandscape">
+          <div class="col-12 col-sm-4 p-2" id="centreCardRuralLandscape">
             <!-- Card -->
             <div class="card">
 
@@ -357,7 +351,7 @@
           <!--Grid column-->
 
           <!--Grid column (83 Crore Consumers)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -379,7 +373,7 @@
           <!--Grid column-->
 
           <!--Grid column (40% of India's FMCG Sales )-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -401,7 +395,7 @@
           <!--Grid column-->
 
           <!--Grid column (38% 2-wheeler density)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -425,7 +419,7 @@
           <!--Grid column-->
 
           <!--Grid column (Highest Growth Projected Till 2050)-->
-          <div class="col-6 col-sm-4 p-2">
+          <div class="col-12 col-sm-4 p-2">
             <!-- Card -->
             <div class="card">
 
@@ -476,7 +470,7 @@
 
                   <!-- First Step -->
                   <li>
-                    <a>
+                    <a style="cursor: default">
                       <span class="circle black">1</span>
                     </a>
                     <div class="step-content grey lighten-3">
@@ -488,7 +482,7 @@
 
                   <!-- Second Step -->
                   <li class="">
-                    <a>
+                    <a style="cursor: default">
                       <span class="circle black">2</span>
                     </a>
                     <div class="step-content grey lighten-3">
@@ -558,6 +552,7 @@
       const elementRect = element.getBoundingClientRect();
       const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight;
       const middle = absoluteElementTop - (window.innerHeight / 2);
+      $('#navbarSupportedContent').removeClass('show');
       window.scrollTo(0, middle);
     });
 
@@ -566,6 +561,7 @@
       const elementRect = element.getBoundingClientRect();
       const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight;
       const middle = absoluteElementTop - (window.innerHeight / 2);
+      $('#navbarSupportedContent').removeClass('show');
       window.scrollTo(0, middle);
     });
 
@@ -575,6 +571,7 @@
       const imageHeight = $('#workflowImage').innerHeight()/3;
       const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight + imageHeight;
       const middle = absoluteElementTop - (window.innerHeight / 2);
+      $('#navbarSupportedContent').removeClass('show');
       window.scrollTo(0, middle);
     });
 
