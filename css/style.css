@@ -24,7 +24,8 @@ body,
 
 /* Navbar animation */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: white
+}
 
 .top-nav-collapse {
   background-color: white;
@@ -41,12 +42,6 @@ body,
 .speedmart-color-circle {
   background-color: #4285F4 !important;
 }
-
-.steps-text {
-  color: black !important;
-}
-
-
 
 
 
@@ -106,7 +101,7 @@ header,
 
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
-    background: black !important;
+    background: white !important;
   }
 }
 
@@ -114,4 +109,6 @@ header,
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: black; } }
+    background-color: white;
+  }
+}
