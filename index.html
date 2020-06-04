@@ -115,7 +115,10 @@
         <!--Second slide-->
         <div class="carousel-item">
           <div class="view"
-               style="background-image: url('img/carousel_items/2.jpg'); background-repeat: no-repeat; background-size: cover;">
+               style="background-image: url('img/carousel_items/2.jpg');
+                background-repeat: no-repeat;
+                 background-size: cover;
+                 background-position-x: center;">
 
             <!-- Mask & flexbox options-->
             <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -143,7 +146,10 @@
         <!--Third slide-->
         <div class="carousel-item">
           <div class="view"
-               style="background-image: url('img/carousel_items/3.jpg'); background-repeat: no-repeat; background-size: cover;">
+               style="background-image: url('img/carousel_items/3.jpg');
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position-x: center;">
 
             <!-- Mask & flexbox options-->
             <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -692,7 +698,7 @@
 
         </div>
         <div class="modal-footer d-flex justify-content-center">
-          <button class="btn btn-outline-dark waves-effect">Send</button>
+          <button class="btn btn-outline-dark waves-effect" id="contactButton">Send</button>
         </div>
       </div>
     </div>
@@ -708,50 +714,7 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-    const navBarHeight = $('.navbar').innerHeight();
-
-    $("#navbar_india_rural_landscape").on('click', function () {
-      const element = document.getElementById('centreCardRuralLandscape');
-      const elementRect = element.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight;
-      const middle = absoluteElementTop - (window.innerHeight / 2);
-      $('#navbarSupportedContent').removeClass('show');
-      window.scrollTo(0, middle);
-    });
-
-    $("#navbar_business_reality").on('click', function () {
-      const element = document.getElementById('centre_business_reality');
-      const elementRect = element.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight;
-      const middle = absoluteElementTop - (window.innerHeight / 2);
-      $('#navbarSupportedContent').removeClass('show');
-      window.scrollTo(0, middle);
-    });
-
-    $("#navbar_workflow").on('click', function () {
-      const element = document.getElementById('workflowImage');
-      const elementRect = element.getBoundingClientRect();
-      const imageHeight = $('#workflowImage').innerHeight() / 3;
-      const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight + imageHeight;
-      const middle = absoluteElementTop - (window.innerHeight / 2);
-      $('#navbarSupportedContent').removeClass('show');
-      window.scrollTo(0, middle);
-    });
-
-
-    $("#navbar_products").on('click', function () {
-      const element = document.getElementById('productsAndServicesLink');
-      const elementRect = element.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.pageYOffset + navBarHeight;
-      const middle = absoluteElementTop - (window.innerHeight / 2);
-      $('#navbarSupportedContent').removeClass('show');
-      window.scrollTo(0, middle);
-    });
-
-  </script>
+  <script src="js/main.js" type="text/javascript"></script>
 </body>
 <!--
 Credits-
