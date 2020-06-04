@@ -39,3 +39,7 @@ $("#navbar_products").on('click', function () {
     $('#navbarSupportedContent').removeClass('show');
     window.scrollTo(0, middle);
 });
+
+$('#contactButton').on('click', function () {
+    console.log('Clicked submit');
+});
