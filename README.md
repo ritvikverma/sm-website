@@ -1,1 +1,0 @@
-# ritvikverma.github.io
